@@ -1,0 +1,38 @@
+.Tile {
+  --box-dimensions: 4.5rem;
+  height: var(--box-dimensions);
+  width: var(--box-dimensions);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Tile > span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--fg-clr-txt);
+}
+
+.idle {
+  border: 2px solid var(--border-clr);
+}
+
+.active {
+  border: 2px solid var(--border-clr-active);
+}
+
+.correct {
+  border: 2px solid var(--bg-clr-correct);
+  background-color: var(--bg-clr-correct);
+}
+
+.partial-correct {
+  border: 2px solid var(--bg-clr-partial-correct);
+  background-color: var(--bg-clr-partial-correct);
+}
+
+.incorrect {
+  border: 2px solid var(--bg-clr-incorrect);
+  background-color: var(--bg-clr-incorrect);
+}

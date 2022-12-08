@@ -1,0 +1,23 @@
+:root {
+  --bg-clr-game: rgb(18, 18, 19);
+  --bg-clr-key: rgb(129, 131, 132);
+  --bg-clr-correct: rgb(83, 141, 78);
+  --bg-clr-partial-correct: rgb(181, 159, 59);
+  --bg-clr-incorrect: rgb(58, 58, 60);
+
+  --border-clr: rgb(58, 58, 60);
+  --border-clr-active: rgb(86, 87, 88);
+
+  --fg-clr-txt: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-clr-game);
+  font-family: Arial, Helvetica, sans-serif;
+}

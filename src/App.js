@@ -1,9 +1,10 @@
-import './App.css';
+import "./App.css";
+import TilesRow from "./components/Board/TilesRow/TilesRow";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <TilesRow n={5} />
     </div>
   );
 }
