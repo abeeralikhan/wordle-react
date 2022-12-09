@@ -8,13 +8,13 @@ const POSSIBLE_CLASSES = [
   "incorrect",
 ];
 
-const getGuessClass = (guessStatus, word) => {
-  if (!word) return "idle";
+const getGuessClass = (guessStatus, letter) => {
+  if (!letter) return "idle";
 
-  // Have word but guess status is not clear
+  // Have letter but guess status is not clear
   if (!guessStatus) return "active";
 
-  // Have both word & guess status
+  // Have both letter & guess status
   return validateGuessStatus(guessStatus);
 };
 
@@ -22,11 +22,11 @@ const validateGuessStatus = (guessStatus) => {
   return POSSIBLE_CLASSES.includes ? guessStatus : "idle";
 };
 
-const Tile = ({ word = "", guessStatus }) => {
-  const classes = `Tile ${getGuessClass(guessStatus, word)}`;
+const Tile = ({ letter = "", guessStatus }) => {
+  const classes = `Tile ${getGuessClass(guessStatus, letter)}`;
   return (
     <div className={classes}>
-      <span>{word.toUpperCase()}</span>
+      <span>{letter.toUpperCase()}</span>
     </div>
   );
 };

@@ -1,10 +1,10 @@
 import "./App.css";
-import TilesRow from "./components/Board/TilesRow/TilesRow";
+import Game from "./components/Game/Game";
 
 function App() {
   return (
     <div className="App">
-      <TilesRow n={5} />
+      <Game />
     </div>
   );
 }
